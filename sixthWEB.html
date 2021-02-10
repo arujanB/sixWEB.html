@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sixth lab</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.fd{
+			height: 80px;
+			background-color: #edcfa9;
+			
+		}
+		.u{
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			font-size: 23px;
+			padding: 25px;
+		}
+		.l{
+			margin-right: 100px;
+		}
+		.l:hover{
+			color:  white;
+		}
+		/*.oboy{
+			background-image: url('https://lh3.googleusercontent.com/proxy/i6fnL1h8Vqxvr7L88DkfwDXL8jQikJ9D1PBZCaJFuZFb2NW820gNxSjojCiP3_DJFiAn1MgtiAD6GHG6Jhv3ts52YiXNxDQXhzHGEDWRFae57s6Oa-7amwJea4eGyaXWD0RP3V7znZBW_lSKP7JZnpMPEQ');
+			background-image: url('https://www.vladtime.ru/uploads/posts/2018-02/1518885831_fuji-x100t-digital-camera_1920x1200_wallpaper.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 800px;
+		}*/
+		.sg{
+			background-color: black;
+			height: 250px;
+			display: flex;
+			justify-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="fd">
+			<ul class="u">
+				<li class="l" onclick="tex()"><img src="">clik here</li>
+				<li class="l"><i>Home</i></li>
+				<li class="l"><i>Catalog</i></li>
+				<li class="l"><i>Contact</i></li>
+				<li class="l"><i>About us</i></li>
+			</ul>
+			<img src="https://filearchive.cnews.ru/mrtest/images/publication/942/53942_IMG_1200X500.jpg" style="width: 100%; height: 648px;" onmouseover="mOver()" id="iii">
+		</div>
+		<div style="outline: inset; outline-color: #edcfa9; height: 640px;">
+		</div>
+		<p style="color: #edcfa9; text-align: center; font-size: 25px; margin-top: -70px; margin-bottom: 40px;" class="textt"><i>If you want to take hight quality photos, then look down</i></p>
+		<div class="sg">
+			<img src="https://i.pinimg.com/236x/d5/0b/bd/d50bbd96c40cfbf334624d968aefc58e--nikon-dslr-camera-dslr-cameras.jpg" onclick="fi()" class="img1">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT82UpvwbbiM6r9_KLUZUwYG-iptSOXrOWthA&usqp=CAU" onclick="fi2()">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRjFSWy0jtoDv6CM1aLmysuVWiSnIq_gtHu5g&usqp=CAU" onclick="fi3()">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFYflx7vcxpuduHnKdgUyfF8KagY77a4bbVg&usqp=CAU" onclick="fi4()">
+		</div>
+		<div style="background-color: black; text-align: center; height: 80px;">
+			<p id="demo" class="f1" style="color: #edcfa9; font-size: 30px;"></p>
+			<p class="f1" ></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function tex(){
+			var texx = document.getElementsByTagName("p");
+			texx[0].style.color = "white";
+		}
+		function mOver(){
+			document.getElementById("iii").src = "https://dnr-market.ru/ssl/u/19/f6420a803611e68258b199fd96ac54/-/169817-min.jpg";
+		}
+
+		function fi(){
+
+			document.getElementById("demo").innerHTML = "<i>first camera</i>";
+			// document.getElementById("f1").innerHTML = "Hello";
+
+			
+		}
+		function fi2(){
+			// document.getElementById("f1").innerHTML = "Hello2";
+			// var c = document.querySelectorAll("p.f1");
+			document.getElementById("demo").innerHTML = "<i>second camera</i>";
+		}
+		function fi3(){
+			// document.getElementById("f1").innerHTML = "Hello3";
+			var c = document.getElementsByClassName("f1");
+			document.getElementById("demo").innerHTML = "<i>third camera</i>";
+		}
+		function fi4(){
+			// document.getElementById("f1").innerHTML = "Hell04";
+			var c = document.getElementsByClassName("f1");
+			document.getElementById("demo").innerHTML = "<i>fourth camera</i>";
+
+		}
+	</script>
+</body>
+</html>
